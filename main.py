@@ -50,7 +50,7 @@ def next_turn(snake,food):
     snake.coordinates.insert(0,(x,y))
     square=canvas.create_rectangle(x,y,x+SPACE_SIZE,y+SPACE_SIZE,fill=SNAKE_COLOR)
     snake.squares.insert(0,square)
-    
+    ######``
     del snake.coordinates[-1]
     canvas.delete(snake.squares[-1])
     
